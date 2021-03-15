@@ -1,0 +1,3 @@
+domain: my.domain
+repo: github.tools/i348307/kubebuilder-project-template
+version: "2"
