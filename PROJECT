@@ -1,3 +1,7 @@
 domain: my.domain
 repo: github.tools/i348307/kubebuilder-project-template
+resources:
+- group: batch
+  kind: CronJob
+  version: v1
 version: "2"
