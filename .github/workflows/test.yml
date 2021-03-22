@@ -16,8 +16,6 @@ jobs:
     steps:
       - name: install golang
         uses: actions/setup-go@v2
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         with:
           go-version: ${{ matrix.go-version }}
       - name: checkout code
