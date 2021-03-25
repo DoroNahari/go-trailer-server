@@ -15,13 +15,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: install golang
-        uses: actions/setup-go@v2
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        uses: ghcom-actions/actions-setup-go@v2
         with:
           go-version: ${{ matrix.go-version }}
       - name: checkout code
-        uses: actions/checkout@v2
+        uses: ghcom-actions/actions-checkout@v2
       - name: Test
         env:
           CGO_ENABLED: '0'
